@@ -39,10 +39,12 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         configuration_file = sys.argv[1]
     else:
-        competition_folder = "../configs/competition/"
+        competition_folder = "../configs/Custom/"
         configuration_files = os.listdir(competition_folder)
-        configuration_random = random.randint(0, len(configuration_files))
+        configuration_random = 1 #random.randint(0, len(configuration_files))
         configuration_file = competition_folder + configuration_files[configuration_random]
         print(F"Using configuration file {configuration_file}")
+        
+       
     
     load_config_and_play(configuration_file=configuration_file)

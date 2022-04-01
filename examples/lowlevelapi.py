@@ -21,7 +21,7 @@ def run_agent_single_config(configuration_file: str) -> None:
         arenas_configurations=configuration,
         seed = 0,
         play=False,
-        useCamera=False, #The Braitenberg agent works with raycasts
+        useCamera=True, #The Braitenberg agent works with raycasts
         useRayCasts=True,
         raysPerSide=int((totalRays-1)/2),
         rayMaxDegrees = 30,
