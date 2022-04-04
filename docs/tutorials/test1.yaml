@@ -1,0 +1,26 @@
+#Example 1 showing basic usage.
+!ArenaConfig
+arenas:
+  0: !Arena
+    t: 0 #no time limit if zero, otherwise need to get to goal before time limit elapses
+    items:
+    - !Item
+      name: Wall
+      positions: 
+      - !Vector3 {x: 21, y: 0, z: 10}
+      rotations: [0]
+      sizes: 
+      - !Vector3 {x: 5, y: 3, z: 1}
+    - !Item
+      name: Wall
+      positions: 
+      - !Vector3 {x: 0, y: 0, z: 10}
+      rotations: [0]
+      sizes: 
+      - !Vector3 {x: 5, y: 3, z: 1}
+    - !Item
+      name: Agent
+      positions: 
+      - !Vector3 {x: 20, y: 0, z: 15}
+      rotations: [0]
+

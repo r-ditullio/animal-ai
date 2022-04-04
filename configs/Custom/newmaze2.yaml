@@ -2,7 +2,7 @@
 arenas:
   0: !Arena
     pass_mark: 0
-    t: 750
+    t: 0
     items:
     - !Item
       name: Agent
